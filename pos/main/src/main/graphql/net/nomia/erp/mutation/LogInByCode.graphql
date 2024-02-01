@@ -1,0 +1,8 @@
+mutation LogInByCode($requestId: UUID!, $code: String!) {
+    auth(login: {
+        requestId: $requestId,
+        code: $code
+    }) {
+        ... AuthFragment
+    }
+}

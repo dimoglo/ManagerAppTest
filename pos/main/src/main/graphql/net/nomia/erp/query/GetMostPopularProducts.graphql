@@ -1,0 +1,14 @@
+query GetMostPopularProducts (
+    $input: MostPopularProductsWidgetInput!,
+) {
+    mostPopularProductsWidget(input: $input) {
+        elements {
+            id
+            name
+            profit
+            quantity
+            revenue
+        }
+    }
+}
+

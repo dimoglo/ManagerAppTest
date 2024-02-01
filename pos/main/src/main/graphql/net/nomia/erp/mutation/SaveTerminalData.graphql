@@ -1,0 +1,5 @@
+mutation SaveTerminalData($terminal: TerminalInputData!) {
+    saveTerminalData(terminalInput: $terminal) {
+        id
+    }
+}

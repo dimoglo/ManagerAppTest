@@ -1,0 +1,14 @@
+query GetSalesToday (
+    $widgetInput: SalesTodayWidgetInput!,
+) {
+    salesTodayWidget(widgetInput: $widgetInput) {
+        salesToday {
+            averageCheck
+            checksCount
+            guestsCount
+            profit
+            revenue
+        }
+    }
+}
+

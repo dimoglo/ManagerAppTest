@@ -1,0 +1,14 @@
+query GetMostPopularCategories (
+    $input: MostPopularCategoriesWidgetInput!,
+) {
+    mostPopularCategoriesWidget(input: $input) {
+        elements {
+            id
+            name
+            profit
+            quantity
+            revenue
+        }
+    }
+}
+

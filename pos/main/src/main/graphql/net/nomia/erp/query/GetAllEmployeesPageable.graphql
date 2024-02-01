@@ -1,0 +1,12 @@
+
+query GetAllEmployeesPageable($pageRequestInput: PageRequestInput!) {
+    allEmployeesPageable(pageRequest: $pageRequestInput, filter: {}) {
+        content {
+            ...EmployeeFragment
+        }
+        pageNumber
+        pageSize
+        total
+        totalPages
+    }
+}

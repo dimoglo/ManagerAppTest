@@ -1,0 +1,15 @@
+fragment EmployeeFragment on Employee {
+    id,
+    accountId,
+    firstName,
+    lastName,
+    vatin,
+    pin,
+    userGroups {
+        id,
+        name,
+        code,
+        userGroupId,
+        storeId
+    }
+}

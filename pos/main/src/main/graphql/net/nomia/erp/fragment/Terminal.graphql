@@ -1,0 +1,14 @@
+fragment TerminalFragment on Terminal {
+    id
+    name
+    menu {
+        ...MenuFragment
+    }
+    orderSequence
+    store {
+        ...MainStoreFragment
+        organization {
+            ...OrganizationFragment
+        }
+    }
+}

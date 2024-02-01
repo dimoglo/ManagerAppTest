@@ -1,0 +1,199 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "1dbab9914d63bc4284d2f114803faa62",
+    "entities": [
+      {
+        "tableName": "settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `terminalId` TEXT, `discountLatestSync` INTEGER, `useCustomTheme` INTEGER NOT NULL DEFAULT 0, `customTheme` TEXT NOT NULL DEFAULT 'LIGHT', `showSectionImages` INTEGER NOT NULL DEFAULT 0, `showItemImages` INTEGER NOT NULL DEFAULT 0, `showSectionColors` INTEGER NOT NULL DEFAULT 0, `server_provider_type` TEXT NOT NULL, `server_provider_url` TEXT, `server_provider_wss` TEXT, `server_provider_api` TEXT, `application_token_accessToken` TEXT, `application_token_refreshToken` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "terminalId",
+            "columnName": "terminalId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "discountLatestSync",
+            "columnName": "discountLatestSync",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "useCustomTheme",
+            "columnName": "useCustomTheme",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "customTheme",
+            "columnName": "customTheme",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'LIGHT'"
+          },
+          {
+            "fieldPath": "showSectionImages",
+            "columnName": "showSectionImages",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "showItemImages",
+            "columnName": "showItemImages",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "showSectionColors",
+            "columnName": "showSectionColors",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          },
+          {
+            "fieldPath": "serverProvider.type",
+            "columnName": "server_provider_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "serverProvider.url",
+            "columnName": "server_provider_url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serverProvider.wss",
+            "columnName": "server_provider_wss",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serverProvider.api",
+            "columnName": "server_provider_api",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "applicationToken.accessToken",
+            "columnName": "application_token_accessToken",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "applicationToken.refreshToken",
+            "columnName": "application_token_refreshToken",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "terminal",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `storeId` TEXT NOT NULL, `orderSequence` INTEGER NOT NULL, `deviceType` TEXT NOT NULL DEFAULT 'Unknown', `organization_id` TEXT NOT NULL, `organization_name` TEXT, `organization_code` TEXT NOT NULL, `organization_currency` TEXT NOT NULL DEFAULT 'RUB', `menu_id` TEXT, `menu_name` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storeId",
+            "columnName": "storeId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderSequence",
+            "columnName": "orderSequence",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deviceType",
+            "columnName": "deviceType",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'Unknown'"
+          },
+          {
+            "fieldPath": "organization.id",
+            "columnName": "organization_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "organization.name",
+            "columnName": "organization_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organization.code",
+            "columnName": "organization_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "organization.currency",
+            "columnName": "organization_currency",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'RUB'"
+          },
+          {
+            "fieldPath": "menu.id",
+            "columnName": "menu_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "menu.name",
+            "columnName": "menu_name",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1dbab9914d63bc4284d2f114803faa62')"
+    ]
+  }
+}

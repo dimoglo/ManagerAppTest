@@ -1,0 +1,9 @@
+mutation SignInPos($login: String!) {
+   signInV2(login: $login, type: POS) {
+      ... on SignInResponse {
+         requestId
+         authType
+         hasPassword
+      }
+   }
+}

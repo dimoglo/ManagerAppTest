@@ -1,0 +1,4 @@
+fragment AnalyticsFragment on PaySystemAnalytics {
+    amount
+    paySystemName
+}

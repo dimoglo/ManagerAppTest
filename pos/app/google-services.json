@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1052168635437",
+    "project_id": "nomia-pos",
+    "storage_bucket": "nomia-pos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052168635437:android:01005a2e8aeaebc100e4a4",
+        "android_client_info": {
+          "package_name": "net.nomia.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052168635437-63jisutuntokhjdcmebu7q955ch6feg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB84m-39zAYYksNzuqfR9ILP4He0M2tIFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052168635437-63jisutuntokhjdcmebu7q955ch6feg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052168635437:android:1a4c85f6f627a8dc00e4a4",
+        "android_client_info": {
+          "package_name": "net.nomia.pos.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052168635437-63jisutuntokhjdcmebu7q955ch6feg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB84m-39zAYYksNzuqfR9ILP4He0M2tIFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052168635437-63jisutuntokhjdcmebu7q955ch6feg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+query GetAllOrganizations($pageRequestInput: PageRequestInput!) {
+    allOrganizationsPageable(pageRequestInput: $pageRequestInput) {
+        content {
+            ...OrganizationFragment
+        }
+        pageNumber
+        pageSize
+        total
+        totalPages
+    }
+}

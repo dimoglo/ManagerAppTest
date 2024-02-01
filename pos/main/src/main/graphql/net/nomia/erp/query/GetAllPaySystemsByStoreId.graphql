@@ -1,0 +1,5 @@
+query GetAllPaySystemsByStoreId($storeId: UUID!) {
+    allPaySystemsByStoreId(storeId: $storeId) {
+        ...PaySystemFragment
+    }
+}

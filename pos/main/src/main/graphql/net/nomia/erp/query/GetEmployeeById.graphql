@@ -1,0 +1,5 @@
+query GetEmployeeById($id: UUID!) {
+    employee(id: $id) {
+        ... EmployeeFragment
+    }
+}

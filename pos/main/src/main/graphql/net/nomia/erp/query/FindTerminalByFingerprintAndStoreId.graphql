@@ -1,0 +1,5 @@
+query FindTerminalByFingerprintAndStoreId($fingerprint: String!, $storeId: UUID!) {
+    findTerminalByFingerprintAndStoreId(fingerprint: $fingerprint, storeId: $storeId) {
+        ...TerminalFragment
+    }
+}

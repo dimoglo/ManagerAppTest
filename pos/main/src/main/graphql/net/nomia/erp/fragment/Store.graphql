@@ -1,0 +1,6 @@
+fragment MainStoreFragment on Store {
+    id,
+    name,
+    actualAddress,
+    tablesFeatureEnabled
+}

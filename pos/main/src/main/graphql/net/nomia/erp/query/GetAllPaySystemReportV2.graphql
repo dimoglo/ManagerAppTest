@@ -1,0 +1,19 @@
+query GetPaySystemReportV2 (
+    $input: PaySystemReportInput!,
+    $pageRequest: PageRequestInput,
+    $sort: [PaySystemReportSort!]
+) {
+    paySystemReportV2(input: $input) {
+        rows(pageRequest: $pageRequest, sort: $sort) {
+            content {
+                averageCheck
+                guestsCount
+                ordersQuantity
+                paySystemId
+                paySystemName
+                revenue
+            }
+        }
+    }
+}
+

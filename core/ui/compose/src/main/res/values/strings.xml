@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repeat">Повтор</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="technical_support">Техническая поддержка</string>
+    <string name="technical_support_number">8 (800) 777–89–69 (доб. 2)</string>
+    <string name="version">Версия: %1$S</string>
+</resources>

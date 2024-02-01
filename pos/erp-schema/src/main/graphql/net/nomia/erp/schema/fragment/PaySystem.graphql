@@ -1,0 +1,5 @@
+fragment PaySystemFragment on PaySystem {
+    id
+    name
+    icon
+}

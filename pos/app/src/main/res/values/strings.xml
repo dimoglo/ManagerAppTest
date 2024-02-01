@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Manager App</string>
+
+    <string name="network_unavailable">Проверьте интернет соединение</string>
+    <string name="organization_id_template">ID: %s</string>
+    <string name="pos_setup_no_menus_created_title">У этого заведения нет ни одного меню</string>
+    <string name="pos_setup_no_menus_created_description">Создайте меню в бэк-офисе или выберите другое заведение, чтобы начать работу.</string>
+    <string name="pos_setup_no_menus_created_button_title">Создать меню</string>
+
+    <string name="organization">Организация</string>
+    <string name="store">Заведение</string>
+    <string name="menu">Меню</string>
+    <string name="pos_setup_terminal_name_label">Название терминала</string>
+    <string name="start_work_action">Начать работу</string>
+    <string name="create_selling_spot">Настройка точки продажи</string>
+    <string name="failed_to_save">Не удалось сохранить</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="pos_setup_loading_error">Не удалось передать запрос. Проверьте соединение с сетью.</string>
+
+</resources>

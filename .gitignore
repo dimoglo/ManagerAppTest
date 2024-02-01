@@ -1,0 +1,15 @@
+*.iml
+/.gradle
+/local.properties
+/.idea/*
+!.idea/codeStyles
+/.DS_Store
+/build
+/captures
+/tmp
+.externalNativeBuild
+.cxx
+local.properties
+libfptr10/build
+/fastlane/
+.env.*

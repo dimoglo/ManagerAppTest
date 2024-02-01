@@ -1,0 +1,22 @@
+query GetSalesByDate (
+    $dateFrom: LocalDate!
+    $dateTo: LocalDate!
+    $storeIds: [UUID!]
+    $terminalIds: [UUID!]
+) {
+    getChartReport(
+        dateFrom: $dateFrom
+        dateTo: $dateTo
+        storeIds: $storeIds
+        terminalIds: $terminalIds
+    ) {
+            averageCheck
+            checksCount
+            date
+            guestsCount
+            profit
+            quantity
+            revenue
+    }
+}
+

@@ -1,0 +1,5 @@
+query GetEmployeeByAccountIdAndOrganizationId($accountId: UUID!, $organizationId: UUID!) {
+    employeeByAccountIdAndOrganizationId(accountId: $accountId, organizationId: $organizationId) {
+        ... EmployeeFragment
+    }
+}

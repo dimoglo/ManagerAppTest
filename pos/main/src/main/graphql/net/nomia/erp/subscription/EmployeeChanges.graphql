@@ -1,0 +1,17 @@
+subscription EmployeeChanges {
+    employeeChanges {
+        ... on EmployeeCreated {
+            employee {
+                ... EmployeeFragment
+            }
+        }
+        ... on EmployeeUpdated {
+            employee {
+                ... EmployeeFragment
+            }
+        }
+        ... on EmployeeRemoved {
+            id
+        }
+    }
+}

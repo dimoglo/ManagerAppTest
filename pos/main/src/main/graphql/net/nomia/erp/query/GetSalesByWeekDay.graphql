@@ -1,0 +1,15 @@
+query GetSalesByWeekDay (
+    $widgetInput: SalesByWeekDayWidgetInput!,
+) {
+    salesByWeekDayWidget(widgetInput: $widgetInput) {
+        elements {
+            averageWeeklyCheck
+            averageWeeklyProfit
+            averageWeeklyRevenue
+            dayOfWeek
+            totalWeeklyChecksCount
+            totalWeeklyGuestsCount
+        }
+    }
+}
+

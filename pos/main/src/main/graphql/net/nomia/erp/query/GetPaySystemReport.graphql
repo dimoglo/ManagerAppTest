@@ -1,0 +1,15 @@
+query GetPaySystemReport(
+    $terminalIds: [UUID!],
+    $storeIds: [UUID!],
+    $dateFrom: LocalDate!,
+    $dateTo: LocalDate!
+) {
+    getPaySystemReport(
+        dateFrom: $dateFrom,
+        dateTo: $dateTo,
+        storeIds: $storeIds,
+        terminalIds: $terminalIds,
+    ){
+        ...AnalyticsFragment
+    }
+}

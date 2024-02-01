@@ -1,0 +1,7 @@
+mutation CreateApplicationToken($name: String!, $storeId: UUID!, $terminalId: UUID!) {
+    createApplicationToken(posInfo: {
+        name: $name,
+        storeId: $storeId,
+        terminalId: $terminalId
+    })
+}

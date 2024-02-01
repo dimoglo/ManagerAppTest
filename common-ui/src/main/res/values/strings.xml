@@ -1,0 +1,43 @@
+<resources>
+<string name="settings_logout_dialog_dismiss">Нет</string>
+    <string name="settings_logout_dialog_title">Выйти из аккаунта?</string>
+    <string name="settings_logout_dialog_body">При выходе из аккаунта, несохраненные на сервере данные будут потеряны.</string>
+    <string name="settings_logout_dialog_confirm">Да, выйти</string>
+
+    <string name="preview_headline_text">Заголовок</string>
+    <string name="preview_support_text">Подзаголовок с описанием чего то важного</string>
+    <string name="preview_extra_headline_text">25</string>
+
+    <string name="auth_action">Перейдите по ссылке в веб-версию и зарегистрируйтесь</string>
+    <string name="user_unregistered">Пользователь не зарегистрирован</string>
+    <string name="continue_in_browser">Продолжить в браузере</string>
+    <string name="no_menus_created_title">Создайте меню</string>
+    <string name="no_menus_created_subtitle">В вашем аккаунте еще нет ни одного меню, для начала работы создайте его в бэк-офисе.</string>
+    <string name="no_menus_create">Создать меню</string>
+
+    <string name="retry_code">Отправить код ещё раз</string>
+    <string name="retry_code_with_timer">Отправить код ещё раз через %s</string>
+    <string name="hint_password">Пароль</string>
+    <string name="continue_action">Продолжить</string>
+
+    <string name="rate_limit_countdown">Превышено количество запросов! Следующая попытка через: %02d:%02d</string>
+    <string name="phone_or_email">Телефон или почта</string>
+    <string name="login">Войти</string>
+
+    <string name="input_code_from_phone">Введите код из СМС</string>
+    <string name="input_code_from_phone_hint">Мы отправили код на номер\n%s</string>
+
+    <string name="input_code_from_email">Введите код из письма</string>
+    <string name="input_code_from_email_hint">Мы отправили код на адрес\n%s</string>
+
+    <string name="input_password">Введите пароль</string>
+    <string name="input_password_for">Введите пароль для %s</string>
+
+    <string name="welcome_title">Добро пожаловать!</string>
+    <string name="auth_subtitle">Введите номер телефона или адрес электронной почты для входа или зарегистрируйтесь</string>
+
+    <string name="internal_auth_enter_pin">Введите PIN-код</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="no_network">"Нет интернета, проверьте интернет соединение"</string>
+
+</resources>

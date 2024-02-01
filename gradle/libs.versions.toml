@@ -1,0 +1,211 @@
+[versions]
+kotlin = "1.8.10"
+kotlinCoroutines = "1.7.1"
+lifecycle = "2.6.1"
+firebaseBom = "32.1.1"
+dagger = "2.46.1"
+hilt = "1.0.0"
+room = "2.5.2"
+compose = "1.4.3"
+composeBom = "2023.05.01"
+navigation = "2.5.3"
+accompanist = "0.30.1"
+sentry = "6.23.0"
+apollo = "2.5.14"
+ksp = "1.8.10-1.0.9"
+sentryPlugin = "3.11.0"
+gradlePlugin = "8.0.2"
+googleServices = "4.3.15"
+
+[libraries]
+#Android
+androidToolsBuildGradle = { module = "com.android.tools.build:gradle", version.ref = "gradlePlugin" }
+desugar = "com.android.tools:desugar_jdk_libs:2.0.3"
+
+#Jetbrains
+kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+kotlinReflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+#Core
+core = "androidx.core:core-ktx:1.10.1"
+splashScreen = "androidx.core:core-splashscreen:1.0.1"
+
+#Activity
+activity-ktx = "androidx.activity:activity-ktx:1.7.2"
+activity-compose = "androidx.activity:activity-compose:1.7.2"
+activity-appcompat = "androidx.appcompat:appcompat:1.6.1"
+
+#Coroutines
+kotlinxCoroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+testCoroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinCoroutines" }
+
+#Lifecycle
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycle" }
+
+#Firebase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx" }
+firebase-config-ktx = { module = "com.google.firebase:firebase-config-ktx" }
+firebaseAnalyticsGradle = "com.google.firebase:firebase-crashlytics-gradle:2.9.6"
+
+#Dagger
+dagger = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
+daggerCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger" }
+hiltAndroidGradle = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "dagger" }
+
+#Hilt
+hiltCompiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt" }
+
+#Room
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+roomCompiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-paging = { module = "androidx.room:room-paging", version.ref = "room" }
+
+#Compose
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material = { module = "androidx.compose.material:material" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-adaptive = { module = "androidx.compose.material3:material3-window-size-class" }
+compose-debug = { module = "androidx.compose.ui:ui-test-manifest" }
+
+#Navigation
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+
+#Paging
+paging = "androidx.paging:paging-runtime-ktx:3.1.1"
+compose-paging = "androidx.paging:paging-compose:1.0.0-alpha20"#3.2.0-rc01
+
+#Apollo
+apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version.ref = "apollo" }
+apollo-coroutines = { module = "com.apollographql.apollo:apollo-coroutines-support", version.ref = "apollo" }
+apolloGradle = { module = "com.apollographql.apollo:apollo-gradle-plugin", version.ref = "apollo" }
+
+#Accompanist
+accompanist-insets = { group = "com.google.accompanist", name = "accompanist-insets", version.ref = "accompanist" }
+accompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
+accompanist-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
+
+#Sentry
+sentry-apollo = { module = "io.sentry:sentry-apollo", version.ref = "sentry" }
+
+#Nomia utils
+logger = "net.nomia.util:logger:0.0.2"
+
+# Hardware integration
+atol = "net.nomia.integration:kkt-atol:4.0.21"
+kktCore = "net.nomia.integration:kkt-core:3.7.10-SNAPSHOT"
+kktEscpos = "net.nomia.integration:kkt-escpos:1.0.8"
+smartsale = "net.nomia.integration:acquiring-smartsale:2.0.2"
+libfptr10 = "ru.atol:libfptr10-aar:10.9.2.3"
+aqsi = "net.nomia.integration:allinone-aqsi:0.0.18"
+
+#Google
+material = "com.google.android.material:material:1.9.0"
+gson = "com.google.code.gson:gson:2.10.1"
+playCore = "com.google.android.play:core:1.10.3"
+playCoreKtx = "com.google.android.play:core-ktx:1.8.1"
+libphonenumber = "com.googlecode.libphonenumber:libphonenumber:8.13.15"
+ksp = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
+googleServices = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+
+#Utils
+composeAnnotation = "io.github.dilrajsingh1997:compose-annotation:1.0.3"
+composeAnnotationProcessor = "io.github.dilrajsingh1997:compose-annotation-processor:1.0.6"
+composeReorderable = "org.burnoutcrew.composereorderable:reorderable:0.9.6"
+commons = "commons-net:commons-net:3.9.0"
+deviceNames = "com.jaredrummler:android-device-names:2.1.0"
+jwt = "com.auth0.android:jwtdecode:2.0.2"
+logging = "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2"#5.0.0-alpha.11
+saripaar = "com.mobsandgeeks:android-saripaar:2.0.3"
+jackson = "com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2"
+revealswipe = "de.charlex.compose:revealswipe:1.0.0"#1.1.0
+indriya = "tech.units:indriya:2.1.3"#2.1.4
+siUnits = "si.uom:si-units:2.1"
+ktsh = "com.jaredrummler:ktsh:1.0.0"
+timber = "com.jakewharton.timber:timber:5.0.1"
+xlog = "com.elvishew:xlog:1.11.0"
+kstatemachine = "io.github.nsk90:kstatemachine:0.16.0"#0.22.1
+moneta = "org.javamoney:moneta:1.4.2"
+webSocket = "org.java-websocket:Java-WebSocket:1.5.3"
+inject = "javax.inject:javax.inject:1"
+dnssd = "com.github.andriydruk:dnssd:0.9.17"
+javapoet = "com.squareup:javapoet:1.13.0"
+benManes = "com.github.ben-manes:gradle-versions-plugin:0.47.0"
+detekt = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.18.1"#1.23.0
+lottie = "com.airbnb.android:lottie-compose:5.0.1"
+coil = "io.coil-kt:coil-compose:2.4.0"
+
+#Test
+testEspresso = "androidx.test.espresso:espresso-core:3.5.1"
+testExtJunit = "androidx.test.ext:junit:1.1.3"
+testRobolectric = "androidx.test:core:1.5.0"
+testRunner = { module = "androidx.test:runner", version = "1.5.2" }
+testRules = "androidx.test:rules:1.5.0"
+junit = "junit:junit:4.13.2"
+testCore = "androidx.arch.core:core-testing:2.2.0"
+assertjCore = "org.assertj:assertj-core:3.24.2"
+testCoreArch = "androidx.arch.core:core-testing:2.2.0"
+
+
+#NOT_USED
+mapstruct = "org.mapstruct:mapstruct:1.4.2.Final"
+mapstructProcessor = "org.mapstruct:mapstruct-processor:1.4.2.Final"
+cardview = "androidx.cardview:cardview:1.0.0"
+constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.3"
+datastore = "androidx.datastore:datastore-preferences:1.0.0"
+fragment = "androidx.fragment:fragment-ktx:1.4.1"
+legacy = "androidx.legacy:legacy-support-v4:1.0.0"
+startup = "androidx.startup:startup-runtime:1.1.1"
+bcrypt = "at.favre.lib:bcrypt:0.9.0"
+carbon = "tk.zielony:carbon:0.17.0"
+charts = "com.github.PhilJay:MPAndroidChart:v3.1.0"
+result = "com.michael-bull.kotlin-result:kotlin-result:1.1.12"
+rxbinding = "com.jakewharton.rxbinding4:rxbinding:4.0.0"
+svg = "com.caverock:androidsvg-aar:1.4"
+toolargetool = "com.gu.android:toolargetool:0.3.0"
+plot = "com.github.madrapps:plot:0.2.2"
+pinView = "io.github.chaosleung:pinview:1.4.4"
+
+[plugins]
+jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin = { id = "kotlin", version.ref = "kotlin" }
+androidApp = { id = "com.android.application", version.ref = "gradlePlugin" }
+androidLibrary = { id = "com.android.library", version.ref = "gradlePlugin" }
+kotlinAndroid = { id = "kotlin-android", version.ref = "kotlin" }
+kotlinKapt = { id = "kotlin-kapt", version.ref = "kotlin" }
+kotlinParcelize = { id = "kotlin-parcelize", version.ref = "kotlin" }
+sentry = { id = "io.sentry.android.gradle", version.ref = "sentryPlugin" }
+apollo = { id = "com.apollographql.apollo", version.ref = "apollo" }
+hilt = { id = "dagger.hilt.android.plugin", version.ref = "dagger" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+benManes = { id = "com.github.ben-manes.versions" }
+detekt = { id = "io.gitlab.arturbosch.detekt" }
+googleServices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebaseCrashlytics = { id = "com.google.firebase.crashlytics"}
+
+[bundles]
+activity = ["activity-ktx", "activity-compose", "activity-appcompat"]
+apollo = ["apollo-runtime", "apollo-coroutines", "logging"]
+compose = ["compose-ui", "compose-debug", "compose-material", "compose-navigation", "compose-paging",
+    "compose-ui-tooling", "compose-ui-tooling-preview", "compose-adaptive", "compose-material3"]
+lifecycle = ["lifecycle-runtime-ktx", "lifecycle-viewmodel-ktx", "lifecycle-livedata-ktx",
+    "lifecycle-service", "lifecycle-common-java8"]
+navigation = ["navigation-fragment", "navigation-ui"]
+room = ["room-runtime", "room-ktx", "room-paging"]
+measure = ["indriya", "siUnits"]
+sentry = ["sentry-apollo"]
+playCore = ["playCore", "playCoreKtx"]

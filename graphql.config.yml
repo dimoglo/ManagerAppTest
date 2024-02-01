@@ -1,0 +1,8 @@
+schema: pos/erp-schema/src/main/graphql/net/nomia/erp/schema/schema.sdl
+extensions:
+  endpoints:
+    Default GraphQL Endpoint:
+      url: https://stage.erp.n.nomia.tech/graphql
+      headers:
+        user-agent: JS GraphQL
+      introspect: true

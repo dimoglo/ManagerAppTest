@@ -1,0 +1,4 @@
+fragment MenuFragment on Menu {
+    id
+    name
+}

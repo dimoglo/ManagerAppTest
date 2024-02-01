@@ -1,0 +1,15 @@
+query GetSalesByHour (
+    $widgetInput: SalesByHourWidgetInput!,
+) {
+    salesByHourWidget(widgetInput: $widgetInput) {
+        elements {
+            averageHourlyCheck
+            averageHourlyProfit
+            averageHourlyRevenue
+            hour
+            totalHourlyChecksCount
+            totalHourlyGuestsCount
+        }
+    }
+}
+

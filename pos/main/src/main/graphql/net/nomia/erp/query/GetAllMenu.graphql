@@ -1,0 +1,5 @@
+query GetAllMenu($storeId: UUID!) {
+    allMenus(storeId: $storeId) {
+        ...MenuFragment
+    }
+}

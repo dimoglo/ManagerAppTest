@@ -1,0 +1,4 @@
+fragment AmountDataFragment on AmountData {
+    amountValue,
+    currencyUnit
+}
